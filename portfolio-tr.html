@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Şule Özmen — Data Analytics Engineer. Selected work in analytics, SQL, machine learning, BI and process automation." name="description"/>
+<title>Şule Özmen — Veri Analiz Mühendisi</title>
+<style>
+:root{
+ --bg:#f7f6f1;--paper:#fffefa;--ink:#18313a;--muted:#617077;--line:#d9dfdc;
+ --teal:#176d69;--teal-soft:#e9f3f1;--amber:#b9812f;--amber-soft:#f7eedf;
+ --lav:#f0edf6;--navy:#17323c;--max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.58}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:auto;padding:0 30px}
+nav{position:sticky;top:0;z-index:20;background:rgba(247,246,241,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.navin{height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:800;letter-spacing:-.02em}
+.navlinks{display:flex;align-items:center;gap:20px;font-size:13px;color:var(--muted)}
+.navlinks a{text-decoration:none}
+.navlinks a:hover{color:var(--teal)}
+.navmail{padding:7px 11px;border:1px solid #b9cfca;border-radius:9px;color:var(--teal)!important;background:#fff}
+.hero{padding:82px 0 66px}
+.eyebrow,.label{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--teal)}
+h1{font-size:clamp(48px,7vw,78px);line-height:1;letter-spacing:-.052em;margin:14px 0 20px;max-width:900px}
+.lead{max-width:800px;font-size:19px;color:#43545b;margin:0}
+.hero-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-top:28px}
+.pills{display:flex;flex-wrap:wrap;gap:7px}
+.pill{font-size:12px;border:1px solid var(--line);background:var(--paper);padding:6px 9px;border-radius:999px}
+.hero-contact{text-align:right;min-width:250px}
+.hero-contact span{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:var(--muted);margin-bottom:4px}
+.hero-contact a{font-size:14px;font-weight:750;color:var(--teal);text-decoration:none}
+section{padding:60px 0;border-top:1px solid var(--line)}
+.section-head{display:grid;grid-template-columns:130px 1fr;gap:26px;margin-bottom:28px}
+.num{font:700 11px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--amber);padding-top:6px}
+h2{font-size:36px;line-height:1.08;letter-spacing:-.035em;margin:0 0 10px}
+.intro{max-width:790px;color:var(--muted);font-size:16px;margin:0}
+.cards3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:start}
+.card{border:1px solid var(--line);background:var(--paper);border-radius:14px;padding:17px 18px}
+.card.teal{background:var(--teal-soft)} .card.amber{background:var(--amber-soft)} .card.lav{background:var(--lav)}
+.card h3{font-size:17px;line-height:1.25;margin:5px 0 6px;letter-spacing:-.015em}
+.card p{font-size:13px;line-height:1.5;color:var(--muted);margin:0}
+.workflow{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;align-items:start}
+.workflow div{border-top:2px solid var(--teal);padding:10px 8px 0}
+.workflow b{display:block;font-size:13px;margin-bottom:3px}
+.workflow span{font-size:11.5px;color:var(--muted);line-height:1.4;display:block}
+.case{border:1px solid var(--line);background:var(--paper);border-radius:18px;padding:25px 26px;margin:14px 0}
+.case.featured{background:linear-gradient(135deg,#edf6f3 0%,#fffefa 46%)}
+.case-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:18px}
+.case h3{font-size:27px;line-height:1.1;letter-spacing:-.03em;margin:5px 0 6px}
+.case-lead{font-size:14.5px;color:var(--muted);max-width:760px;margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end;max-width:330px}
+.tag{font-size:10.5px;padding:5px 8px;border-radius:999px;background:#edf1ef;white-space:nowrap}
+.case-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:22px;align-items:start}
+.detail{margin:0 0 14px}
+.detail:last-child{margin-bottom:0}
+.detail h4{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--teal);margin:0 0 4px}
+.detail p{font-size:13.5px;color:#526168;margin:0;line-height:1.52}
+.pipeline{background:var(--navy);color:#edf4f2;border-radius:13px;padding:15px 16px}
+.pipeline-row{display:flex;align-items:center;gap:7px;flex-wrap:wrap;font-size:11.5px;line-height:1.35}
+.pipeline-row b{font-weight:650}
+.arrow{color:#e2b15d}
+.callout{margin-top:14px;border-left:3px solid var(--amber);padding:7px 11px;background:#fbf7ef;border-radius:0 8px 8px 0;font-size:12.5px;line-height:1.5;color:#45565c}
+.callout strong{color:var(--ink)}
+.mini3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-items:start}
+.mini{padding:15px 16px;border:1px solid var(--line);border-radius:13px;background:#fff}
+.mini:nth-child(1){background:#eef6f4}.mini:nth-child(2){background:#fbf3e6}.mini:nth-child(3){background:#f2eff7}
+.mini b{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--teal)}
+.mini h4{font-size:16px;margin:5px 0}
+.mini p{font-size:12.5px;line-height:1.47;color:var(--muted);margin:0}
+.research{background:var(--navy);color:white}
+.research .intro{color:#c7d4d8}
+.research .num{color:#e1b15f}
+.research .card{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.13)}
+.research .card p{color:#c7d4d8}
+.research .label{color:#9ed0bf}
+.toolgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;align-items:start}
+.tool{border:1px solid var(--line);background:var(--paper);border-radius:12px;padding:14px}
+.tool h3{font-size:14px;margin:0 0 5px}
+.tool p{font-size:11.5px;line-height:1.45;color:var(--muted);margin:0}
+.strengths{display:grid;grid-template-columns:1fr 1fr;column-gap:30px}
+.strength{padding:14px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:165px 1fr;gap:16px}
+.strength strong{font-size:13.5px}
+.strength span{font-size:12.5px;line-height:1.48;color:var(--muted)}
+.contact{padding:50px 0}
+.contactbox{display:flex;align-items:center;justify-content:space-between;gap:25px;background:linear-gradient(115deg,var(--teal-soft),#fffefa 58%,var(--amber-soft));border:1px solid #cfdad6;border-radius:18px;padding:25px 27px}
+.contactbox h2{font-size:28px;margin:4px 0 6px}
+.contactbox p{font-size:13.5px;color:var(--muted);margin:0;max-width:650px}
+.mailbtn{display:inline-flex;padding:11px 15px;border-radius:10px;background:var(--teal);color:#fff;text-decoration:none;font-size:13px;font-weight:750;white-space:nowrap}
+footer{border-top:1px solid var(--line);padding:26px 0 38px}
+.footerline{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
+.footerline strong{font-size:14px}
+.footerline p{font-size:11.5px;color:var(--muted);max-width:720px;margin:0;text-align:right}
+@media(max-width:850px){
+ .navlinks a:not(.navmail){display:none}
+ .hero-bottom,.case-head,.contactbox,.footerline{align-items:flex-start;flex-direction:column}
+ .hero-contact{text-align:left}
+ .section-head,.case-grid{grid-template-columns:1fr}
+ .workflow{grid-template-columns:repeat(3,1fr)}
+ .cards3,.mini3{grid-template-columns:1fr}
+ .toolgrid{grid-template-columns:1fr 1fr}
+ .strengths{grid-template-columns:1fr}
+ .tags{justify-content:flex-start}
+ .footerline p{text-align:left}
+}
+@media(max-width:540px){
+ .wrap{padding:0 19px} .hero{padding:58px 0 46px} h1{font-size:45px}
+ section{padding:46px 0} .workflow{grid-template-columns:1fr 1fr}
+ .toolgrid{grid-template-columns:1fr} .strength{grid-template-columns:1fr;gap:4px}
+ .case{padding:20px} .contactbox{padding:21px} .mailbtn{width:100%;justify-content:center}
+}
+
+@media print{
+ @page{size:A4;margin:8mm 8mm 9mm}
+ html,body{background:#f7f6f1!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ nav{display:none!important}
+ .wrap{max-width:none!important;padding:0 7mm!important}
+ .hero{padding:10mm 0 8mm!important}
+ h1{font-size:38px!important;line-height:1.02!important;margin:8px 0 12px!important;max-width:170mm!important}
+ .lead{font-size:13px!important;line-height:1.48!important;max-width:168mm!important}
+ .hero-bottom{margin-top:16px!important}
+ .pill{font-size:9px!important;padding:4px 7px!important}
+ .hero-contact{min-width:48mm!important}
+ section{padding:8mm 0!important}
+ .section-head{grid-template-columns:25mm 1fr!important;gap:8mm!important;margin-bottom:5mm!important}
+ h2{font-size:25px!important;margin-bottom:6px!important}
+ .intro{font-size:11.5px!important;line-height:1.48!important;max-width:155mm!important}
+ .workflow{gap:5px!important}
+ .workflow div{padding:7px 5px 0!important}
+ .workflow b{font-size:9.5px!important}.workflow span{font-size:8.2px!important;line-height:1.35!important}
+ .cards3{gap:7px!important}.card{padding:10px 11px!important;border-radius:10px!important}
+ .card h3{font-size:12.5px!important}.card p{font-size:9px!important;line-height:1.42!important}
+ .case{padding:14px 15px!important;margin:7px 0!important;border-radius:12px!important;break-inside:avoid;page-break-inside:avoid}
+ .case-head{margin-bottom:9px!important;gap:10px!important}
+ .case h3{font-size:19px!important;margin:3px 0 4px!important}.case-lead{font-size:9.8px!important;line-height:1.4!important}
+ .tags{gap:4px!important;max-width:58mm!important}.tag{font-size:7.5px!important;padding:3px 5px!important}
+ .case-grid{gap:12px!important}.detail{margin-bottom:7px!important}.detail h4{font-size:7.5px!important;margin-bottom:2px!important}.detail p{font-size:9px!important;line-height:1.42!important}
+ .pipeline{padding:9px 10px!important;border-radius:9px!important}.pipeline-row{font-size:8px!important;gap:4px!important}
+ .callout{margin-top:7px!important;padding:5px 8px!important;font-size:8.5px!important;line-height:1.4!important}
+ .mini3{gap:6px!important}.mini{padding:9px 10px!important}.mini b{font-size:7px!important}.mini h4{font-size:11px!important;margin:3px 0}.mini p{font-size:8.5px!important;line-height:1.4!important}
+ .research{break-before:auto!important}
+ .strengths{column-gap:16px!important}.strength{padding:8px 0!important;grid-template-columns:34mm 1fr!important;gap:8px!important;break-inside:avoid}
+ .strength strong{font-size:9px!important}.strength span{font-size:8.5px!important;line-height:1.4!important}
+ .toolgrid{gap:5px!important}.tool{padding:8px!important}.tool h3{font-size:9.5px!important}.tool p{font-size:7.8px!important;line-height:1.4!important}
+ .contact{padding:5mm 0!important}.contactbox{padding:10px 12px!important;border-radius:11px!important}.contactbox p{font-size:9px!important}.mailbtn{padding:7px 10px!important;font-size:9px!important}
+ footer{padding:5mm 0 3mm!important}.footerline strong{font-size:9px!important}.footerline p{font-size:7.5px!important;line-height:1.4!important;max-width:125mm!important}
+ .section-head,.cards3,.workflow,.mini3,.toolgrid,.contactbox,.footerline{break-inside:avoid;page-break-inside:avoid}
+ a{text-decoration:none!important}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap navin"><div class="brand">Şule Özmen</div><div class="navlinks">
+<a href="#approach">Yaklaşım</a><a href="#work">Çalışmalar</a><a href="#research">Araştırma</a><a href="#toolkit">Teknik Araçlar</a><a href="#strengths">Yetkinlikler</a><a href="index.html" aria-label="English portfolio">EN</a><a class="navmail" href="mailto:suleozxmen@gmail.com">İletişim</a>
+</div></div></nav>
+<header class="hero"><div class="wrap">
+<div class="eyebrow">Seçili Veri &amp; Analitik Çalışmaları · 2025–2026</div>
+<h1>Operasyonel problemleri yapılandırılmış veriye, analitiğe ve tekrarlanabilir iş akışlarına dönüştürmek.</h1>
+<p class="lead">Büyük ölçekli bir elektrik dağıtım şirketinde Veri Analiz Mühendisi olarak; kurumsal veri, kayıp-kaçak analitiği, raporlama, karar destek ve süreç otomasyonu alanlarında çalışıyorum. Odağım aracı değil problemi anlamak; veriyi güvenilir ve kullanılabilir hale getirmek; ihtiyaca uygun yöntemi seçmek ve süreci daha sistematik, açıklanabilir ve tekrar kullanılabilir bırakmak.</p>
+<div class="hero-bottom">
+<div class="pills"><span class="pill">SQL &amp; Oracle DW</span><span class="pill">Python</span><span class="pill">Power BI</span><span class="pill">Machine Learning</span><span class="pill">Selenium</span><span class="pill">VBA / Excel</span><span class="pill">OBIEE</span></div></div>
+</div></header>
+<section id="approach"><div class="wrap">
+<div class="section-head"><div class="num">01 / APPROACH</div><div><h2>Önce problem. Sonra yöntem.</h2><p class="intro">Elektrik dağıtım sektörüne başladığımdan beri üç soruyu merkeze aldım: Bu süreç nasıl sistematize edilebilir? Veri nasıl daha anlamlı ve efektif kullanılabilir? Analiz, bir grafikte bitmek yerine karar vermeyi destekleyen bir hikâyeye nasıl dönüştürülebilir?</p></div></div>
+<div class="workflow">
+<div><b>Gözlemle</b><span>Tekrarı, darboğazı veya cevapsız ihtiyacı fark et.</span></div>
+<div><b>Öğren</b><span>Sektörü ve verinin nasıl oluştuğunu anla.</span></div>
+<div><b>Tanımla</b><span>İş ihtiyacını ölçülebilir sinyallere dönüştür.</span></div>
+<div><b>Araştırma</b><span>Probleme uyabilecek yöntemleri araştır.</span></div>
+<div><b>Geliştirme</b><span>İhtiyaca göre SQL, Python, BI, ML veya otomasyon kullan.</span></div>
+<div><b>Operasyonelleştir</b><span>Doğrula, anlaşılır hale getir ve tekrar kullanılabilir kıl.</span></div>
+</div>
+</div></section>
+<section><div class="wrap">
+<div class="section-head"><div class="num">02 / CONTEXT</div><div><h2>Sektörü ve veriyi aynı anda öğrenmek.</h2><p class="intro">Elektrik dağıtımı, akademik eğitimimin doğrudan devamı olan bir alan değildi. Etkin çalışabilmek; sektörün teknik ve operasyonel yapısını öğrenirken milyonlarca aboneye hizmet veren büyük ölçekli bir kurumsal veri ortamını doğru okumayı da gerektirdi. Bu süreçte yalnızca mevcut yöntemleri uygulamakla kalmayıp, veri ve analitik yaklaşımlarının sektörde başka hangi problemlere uyarlanabileceğini araştırmaya odaklandım.</p></div></div>
+<div class="cards3">
+<div class="card teal"><div class="label">Sektörel öğrenme</div><h3>Sistemi anlamak</h3><p>Ölçüm, tüketim, saha operasyonları, kayıp-kaçak, kurumsal raporlama ve operasyonel kısıtlar.</p></div>
+<div class="card amber"><div class="label">Veri sistemi öğrenimi</div><h3>Verinin temsilini anlamak</h3><p>Veri granülerliği, tarihsel yapılar, varlık ilişkileri, veri kalitesi sınırları ve veri ambarındaki alanların iş karşılıkları.</p></div>
+<div class="card lav"><div class="label">Uygulamalı araştırma</div><h3>Neyin işe yarayabileceğini araştırmak</h3><p>Anomali tespiti, skorlama, makine öğrenimi, otomasyon ve görselleştirme yöntemlerinin mevcut gerçek veriye nasıl uyarlanabileceğini test etmek.</p></div>
+</div>
+</div></section>
+<section id="work"><div class="wrap">
+<div class="section-head"><div class="num">03 / SELECTED WORK</div><div><h2>Seçili çalışmalar</h2><p class="intro">Aşağıdaki çalışmalar halka açık sunum için yeniden kurgulanmıştır. Abone bazlı veriler, kurum içi erişim detayları, özel tablo yapıları ve hassas iş kuralları bilinçli olarak çıkarılmış veya genelleştirilmiştir.</p></div></div>
+<article class="case featured">
+<div class="case-head"><div><div class="label">Öne çıkan çalışma · Geliştirme aşamasında</div><h3>Geçmiş Kaçak Olaylarından Öğrenme</h3><p class="case-lead">Doğrulanmış geçmiş kaçak olaylarının, gelecekteki risk önceliklendirmesine katkı sağlayabilecek davranış örüntüleri içerip içermediğini araştıran analitik çalışma.</p></div><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Feature Engineering</span><span class="tag">Machine Learning</span></div></div>
+<div class="case-grid"><div>
+<div class="detail"><h4>Problem</h4><p>Geçmiş saha sonuçları yalnızca geriye dönük kayıtlar olarak kalmak yerine yapılandırılmış bir analitik öğrenme problemine dönüştürülebilir mi?</p></div>
+<div class="detail"><h4>Temel zorluk</h4><p>Tekrarlayan olaylar, eksik zaman serileri, farklı ölçüm yoğunlukları ve olay zamanlaması veriden güvenle ne öğrenilebileceğini doğrudan etkiliyordu.</p></div>
+<div class="detail"><h4>Analitik tasarım</h4><p>Çalışmayı kaçak olayları etrafında yapılandırdım; olay öncesi / olay / olay sonrası zaman pencereleri oluşturdum, davranışsal değişkenler ürettim ve model denemelerinden önce kronoloji kalitesini segmentlere ayırdım.</p></div>
+</div><div>
+<div class="pipeline"><div class="pipeline-row"><b>Geçmiş olaylar</b><span class="arrow">→</span><b>Zaman pencereleri</b><span class="arrow">→</span><b>Davranışsal değişkenler</b><span class="arrow">→</span><b>Veri kalitesi segmentasyonu</b><span class="arrow">→</span><b>Model doğrulama</b></div></div>
+<div class="callout"><strong>Mühendislik kararı.</strong> Modellemeye algoritma seçerek başlamadım. Önce kullanılabilir kronolojiye sahip gözlemleri, geçmişi aynı analitik çıkarımları destekleyemeyecek kadar eksik olanlardan ayırdım.</div>
+<div class="callout"><strong>Kapsam disiplini.</strong> Mevcut prototipi üretim ortamında çalışan bir kaçak tespit modeli olarak değil, tarihsel davranış sınıflandırması olarak ele alıyorum. Canlı skorlama için geleceğe ait bilgiyi kullanmayan ayrı bir referans-tarih veri hattı gerekir.</div>
+</div></div>
+</article>
+<article class="case">
+<div class="case-head"><div><div class="label">Analitik risk mühendisliği</div><h3>SQL Sorgularından Davranışsal Risk Sinyallerine</h3><p class="case-lead">Fatura ve tüketim geçmişini tekrarlanabilir ve açıklanabilir önceliklendirme mantığına dönüştürmek.</p></div><div class="tags"><span class="tag">Advanced SQL</span><span class="tag">Window Functions</span><span class="tag">Risk Scoring</span></div></div>
+<div class="mini3">
+<div class="mini"><b>Kendi geçmişi</b><h4>Zamansal değişim</h4><p>Window fonksiyonları, eşikler ve süreklilik kontrolleriyle dönemsel demand ve normalize günlük tüketim değişimlerini ölçmek.</p></div>
+<div class="mini"><b>Beklenen davranış</b><h4>Kapasite &amp; benzer grup kıyasları</h4><p>Teknik kapasite, gerçekleşen demand ve benzer segmentlere göre beklenen tüketim bantları üretmek; tüketimi tanımlı bir referansa göre değerlendirmek.</p></div>
+<div class="mini"><b>Aksiyona dönüştürme</b><h4>Açıklanabilir risk mantığı</h4><p>Birden fazla zayıf sinyali operasyonel risk sınıfları ve neden kodlarında birleştirerek hem önceliği hem gerekçeyi görünür kılmak.</p></div>
+</div>
+<div class="callout"><strong>Neden önemli?</strong> Tekrarlanan analist karşılaştırmaları SQL içinde şeffaf matematiksel kurallara dönüşüyor; böylece mantık tekrarlanabilir, gözden geçirilebilir ve geliştirilebilir hale geliyor.</div>
+</article>
+<article class="case">
+<div class="case-head"><div><div class="label">Süreç otomasyonu</div><h3>Manuel Raporlamadan Otomatik Veri Akışına</h3><p class="case-lead">Tekrarlayan rapor indirme sürecini otomatikleştirerek operasyonel analiz için kontrol edilebilir ve yeniden çalıştırılabilir bir veri akışına dönüştürmek.</p></div><div class="tags"><span class="tag">Python</span><span class="tag">Selenium</span><span class="tag">Doğrulama</span><span class="tag">Scheduling</span></div></div>
+<div class="case-grid"><div>
+<div class="detail"><h4>Pain point</h4><p>Analiz öncesinde kurum içi raporlama ekranında aynı adımların tekrarlanması, tarih aralıklarının girilmesi, dışa aktarımın beklenmesi ve indirilen dosyaların hazırlanması gerekiyordu.</p></div>
+<div class="detail"><h4>Nasıl gelişti?</h4><p>İlk hedef belirli tarih aralıklarında raporu otomatik indirmekti. Çalışma zamanla dinamik tarih yönetimi, indirme kontrolü, doğrulama, düzenli dosyalama, mükerrer kayıt koruması, loglama ve eksik dönemleri tamamlama mantığına genişledi.</p></div>
+<div class="detail"><h4>Neden Selenium?</h4><p>İhtiyaç duyulan akış erişilebilir bir entegrasyon noktası yerine kullanıcı arayüzü üzerinden sunulduğu için tarayıcı otomasyonu mevcut sürece uygun pratik entegrasyon katmanı oldu.</p></div>
+</div><div class="pipeline"><div class="pipeline-row"><b>Zamanlama</b><span class="arrow">→</span><b>Eksik dönem kontrolü</b><span class="arrow">→</span><b>Tarayıcı otomasyonu</b><span class="arrow">→</span><b>Doğrulama</b><span class="arrow">→</span><b>İşleme</b><span class="arrow">→</span><b>Log</b></div></div></div>
+</article>
+<article class="case">
+<div class="case-head"><div><div class="label">Ekip iş akışı iyileştirmesi</div><h3>Tekrarlayan Veri Hazırlama Sürecini Standardize Etmek</h3><p class="case-lead">Küçük ölçekli ama çalışma yaklaşımımı iyi temsil eden bir VBA iyileştirmesi.</p></div><div class="tags"><span class="tag">OBIEE</span><span class="tag">Excel</span><span class="tag">VBA</span></div></div>
+<div class="case-grid"><div>
+<div class="detail"><h4>Gözlem</h4><p>Saha analizinde kullanılan detaylı bir operasyonel raporda onlarca sütun bulunuyor ve analistler her seferinde aynı ihtiyaç dışı alanları manuel olarak siliyordu.</p></div>
+<div class="detail"><h4>Kodlamadan önce</h4><p>Raporu kullanan mühendislerden gerçekten ihtiyaç duyulan alanları topladım ve ortak ihtiyacı tekrar kullanılabilir bir checklist'e dönüştürdüm.</p></div>
+<div class="detail"><h4>Geliştirme</h4><p>Makro, rapor başlıklarını belirlenen tutulacak alan listesiyle karşılaştırıyor ve analiz kapsamı dışındaki sütunları otomatik kaldırıyor.</p></div>
+</div><div><div class="pipeline"><div class="pipeline-row"><b>Rapor çıktısı</b><span class="arrow">→</span><b>Başlık kontrolü</b><span class="arrow">→</span><b>İhtiyaç listesi</b><span class="arrow">→</span><b>Analize hazır veri</b></div></div>
+<div class="callout">Değer teknik karmaşıklıktan değil; tekrarlayan hazırlık adımını ortadan kaldırıp ekibin analize aynı standart veriyle başlamasını sağlamaktan geliyor.</div></div></div>
+</article>
+<article class="case">
+<div class="case-head"><div><div class="label">Karar destek &amp; raporlama</div><h3>BI, Kurumsal Raporlama &amp; Analitik Teslim</h3></div><div class="tags"><span class="tag">Power BI</span><span class="tag">OBIEE</span><span class="tag">SQL</span><span class="tag">Python</span></div></div>
+<div class="mini3">
+<div class="mini"><b>Power BI</b><h4>Grafikten önce hikâye</h4><p>KPI hiyerarşisi, trend, karşılaştırma, segmentasyon ve drill-down yapısını görsel yoğunluğa değil karar akışına göre kurgulamak.</p></div>
+<div class="mini"><b>Kurumsal raporlama</b><h4>İhtiyaç → doğrulanmış çıktı</h4><p>Sektör kurumları ve şirket içi paydaşlar için raporlama gereksinimlerini SQL tabanlı veri çekimi ve doğrulama mantığına dönüştürmek.</p></div>
+<div class="mini"><b>Python destekli teslim</b><h4>Akışı tamamlamak</h4><p>SQL veya Excel çıktılarının nihai teslim öncesinde ek dönüşüm, birleştirme veya tekrarlanabilir son işlem gerektirdiği durumlarda Python kullanmak.</p></div>
+</div>
+</article>
+</div></section>
+<section class="research" id="research" style="padding-top:11mm!important; padding-bottom:18mm!important;"><div class="wrap">
+<div class="section-head"><div class="num">04 / RESEARCH</div><div><h2>Çalışmaların arkasındaki araştırma</h2><p class="intro">Okumalarımı yalnızca elektrik sektörüyle sınırlamıyorum. Sektörel kaynakların yanında genel analitik yöntemleri inceliyor, ardından bunların gerçek operasyonel veri ve kısıtlarla karşılaştığında ne kadar uygulanabilir olduğunu test ediyorum.</p></div></div>
+<div class="cards3">
+<div class="card"><div class="label">Sektörel araştırma</div><h3>Elektrik dağıtımı &amp; ölçüm analitiği</h3><p>Elektrik dağıtımı, ileri ölçüm altyapıları, kayıp-kaçak, tüketim davranışı ve sektör raporlaması.</p></div>
+<div class="card"><div class="label">Yöntem araştırması</div><h3>Anomali tespiti &amp; ML</h3><p>Gözetimsiz öğrenme, sınıflandırma, risk skorlama, feature engineering, doğrulama ve açıklanabilirlik.</p></div>
+<div class="card"><div class="label">Uyarlama</div><h3>Araştırma → operasyonel problem</h3><p>Bir yöntemi çözüme dahil etmeden önce varsayımları, etiketleri, veri erişilebilirliğini ve operasyonel kısıtları sorgulamak.</p></div>
+</div>
+</div></section>
+<section id="strengths" style="break-before:page; page-break-before:always; padding-top:20mm!important; padding-bottom:17mm!important;"><div class="wrap">
+<div class="section-head"><div class="num">05 / STRENGTHS</div><div><h2>Araç setinin ötesinde çalışma biçimim</h2><p class="intro">Çalışmalarımın ortak noktası; iş sorusunu kullanılabilir bir veri tanımına, tekrarlanabilir bir akışa ve aksiyona dönüşebilen bir çıktıya bağlamak.</p></div></div>
+<div class="strengths">
+<div class="strength"><strong>Yapılandırılmış problem çözme</strong><span>Teknik çözümü seçmeden önce belirsizliği tanımlara, varsayımlara, veri ihtiyaçlarına ve karar noktalarına ayırmak.</span></div>
+<div class="strength"><strong>Sistem düşüncesi</strong><span>Tek seferlik çıktının ötesine bakıp sürecin standardize veya otomatik hale getirilip getirilemeyeceğini sorgulamak.</span></div>
+<div class="strength"><strong>Öğrenme çevikliği</strong><span>Büyük bir kurumsal veri ortamında çalışırken sektör bilgisini ve problemin gerektirdiği yeni yöntemleri eş zamanlı geliştirmek.</span></div>
+<div class="strength"><strong>Analitik iletişim</strong><span>Dashboard, neden kodu ve raporları okuyucunun neyi anlaması ve sonrasında ne yapması gerektiği etrafında tasarlamak.</span></div>
+<div class="strength"><strong>Pragmatik mühendislik</strong><span>Her problemi tek bir araca zorlamak yerine ortama göre SQL, VBA, Python, Selenium veya BI kullanmak.</span></div>
+<div class="strength"><strong>AI destekli verimlilik</strong><span>AI araçlarını araştırma, prototipleme ve debugging süreçlerini hızlandırmak için kullanırken sektör yorumunu, doğrulamayı ve nihai teknik kararı bilinçli biçimde yönetmek.</span></div>
+</div>
+</div></section>
+<section id="toolkit" style="padding-top:17mm!important; padding-bottom:17mm!important;"><div class="wrap">
+<div class="section-head"><div class="num">06 / TOOLKIT</div><div><h2>Araçlar problemi takip eder</h2><p class="intro">Yetkinlik yüzdeleri yerine, ham operasyonel veriden analize, otomasyona ve karar desteğine geçerken aktif olarak kullandığım teknolojiler.</p></div></div>
+<div class="toolgrid">
+<div class="tool"><h3>Veri &amp; SQL</h3><p>Oracle SQL · MS SQL · Enterprise DW · window functions · data validation · analytical queries</p></div>
+<div class="tool"><h3>Programlama &amp; ML</h3><p>Python · pandas · scikit-learn · preprocessing · feature engineering · model experimentation</p></div>
+<div class="tool"><h3>BI &amp; Raporlama</h3><p>Power BI · DAX · Power Query · data modeling · OBIEE · dashboard storytelling</p></div>
+<div class="tool"><h3>Otomasyon</h3><p>Selenium · VBA · Excel macros · file processing · workflow controls</p></div>
+<div class="tool"><h3>Uygulamalı Analitik</h3><p>Fraud analytics · risk scoring · anomaly detection · segmentation · operational prioritization</p></div>
+</div>
+</div></section>
+<section class="contact" id="contact" style="padding-top:14mm!important; padding-bottom:14mm!important;"><div class="wrap">
+<div class="contactbox"><div><div class="label">Profesyonel iletişim</div><p>Portföy ve profesyonel görüşmeler için:</p></div><a class="mailbtn" href="mailto:suleozxmen@gmail.com">suleozxmen@gmail.com</a></div>
+</div></section>
+<footer><div class="wrap footerline">
+<strong>Şule Özmen · Veri Analiz Mühendisi</strong>
+<p>Bu portföy, gerçek çalışma yaklaşımını ve problem çözme biçimini gösterecek kadar teknik bağlam sunarken kurumsal gizliliği koruyacak şekilde hazırlanmıştır. Müşteri/abone bazlı bilgiler, kurum içi sistem adları, erişim detayları, özel tablo yapıları ve hassas iş kuralları paylaşılmamaktadır.</p>
+</div></footer>
+</body></html>
