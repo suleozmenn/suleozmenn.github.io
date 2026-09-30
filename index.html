@@ -5,275 +5,1593 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Şule Özmen — Data Analytics Engineer. Selected work in analytics, SQL, machine learning, BI and process automation." name="description"/>
- <meta property="og:type" content="website"/>
+
+<meta property="og:type" content="website"/>
 <meta property="og:url" content="https://suleozmenn.github.io/"/>
 <meta property="og:title" content="Şule Özmen — Data Analytics Engineer"/>
 <meta property="og:description" content="Selected work in data analytics, SQL-based decision systems, machine learning, BI and process automation."/>
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Şule Özmen — Data Analytics Engineer"/>
 <meta name="twitter:description" content="Selected work in data analytics, SQL-based decision systems, machine learning, BI and process automation."/>
- 
+
 <title>Şule Özmen — Data Analytics Engineer</title>
+
 <style>
 :root{
- --bg:#f7f6f1;--paper:#fffefa;--ink:#18313a;--muted:#617077;--line:#d9dfdc;
- --teal:#176d69;--teal-soft:#e9f3f1;--amber:#b9812f;--amber-soft:#f7eedf;
- --lav:#f0edf6;--navy:#17323c;--max:1120px;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.58}
-a{color:inherit}
-.wrap{max-width:var(--max);margin:auto;padding:0 30px}
-nav{position:sticky;top:0;z-index:20;background:rgba(247,246,241,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.navin{height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{font-weight:800;letter-spacing:-.02em}
-.navlinks{display:flex;align-items:center;gap:20px;font-size:13px;color:var(--muted)}
-.navlinks a{text-decoration:none}
-.navlinks a:hover{color:var(--teal)}
-.navmail{padding:7px 11px;border:1px solid #b9cfca;border-radius:9px;color:var(--teal)!important;background:#fff}
-.hero{padding:82px 0 66px}
-.eyebrow,.label{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--teal)}
-h1{font-size:clamp(48px,7vw,78px);line-height:1;letter-spacing:-.052em;margin:14px 0 20px;max-width:900px}
-.lead{max-width:800px;font-size:19px;color:#43545b;margin:0}
-.hero-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-top:28px}
-.pills{display:flex;flex-wrap:wrap;gap:7px}
-.pill{font-size:12px;border:1px solid var(--line);background:var(--paper);padding:6px 9px;border-radius:999px}
-.hero-contact{text-align:right;min-width:250px}
-.hero-contact span{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:var(--muted);margin-bottom:4px}
-.hero-contact a{font-size:14px;font-weight:750;color:var(--teal);text-decoration:none}
-section{padding:60px 0;border-top:1px solid var(--line)}
-.section-head{display:grid;grid-template-columns:130px 1fr;gap:26px;margin-bottom:28px}
-.num{font:700 11px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--amber);padding-top:6px}
-h2{font-size:36px;line-height:1.08;letter-spacing:-.035em;margin:0 0 10px}
-.intro{max-width:790px;color:var(--muted);font-size:16px;margin:0}
-.cards3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:start}
-.card{border:1px solid var(--line);background:var(--paper);border-radius:14px;padding:17px 18px}
-.card.teal{background:var(--teal-soft)} .card.amber{background:var(--amber-soft)} .card.lav{background:var(--lav)}
-.card h3{font-size:17px;line-height:1.25;margin:5px 0 6px;letter-spacing:-.015em}
-.card p{font-size:13px;line-height:1.5;color:var(--muted);margin:0}
-.workflow{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;align-items:start}
-.workflow div{border-top:2px solid var(--teal);padding:10px 8px 0}
-.workflow b{display:block;font-size:13px;margin-bottom:3px}
-.workflow span{font-size:11.5px;color:var(--muted);line-height:1.4;display:block}
-.case{border:1px solid var(--line);background:var(--paper);border-radius:18px;padding:25px 26px;margin:14px 0}
-.case.featured{background:linear-gradient(135deg,#edf6f3 0%,#fffefa 46%)}
-.case-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:18px}
-.case h3{font-size:27px;line-height:1.1;letter-spacing:-.03em;margin:5px 0 6px}
-.case-lead{font-size:14.5px;color:var(--muted);max-width:760px;margin:0}
-.tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end;max-width:330px}
-.tag{font-size:10.5px;padding:5px 8px;border-radius:999px;background:#edf1ef;white-space:nowrap}
-.case-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:22px;align-items:start}
-.detail{margin:0 0 14px}
-.detail:last-child{margin-bottom:0}
-.detail h4{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--teal);margin:0 0 4px}
-.detail p{font-size:13.5px;color:#526168;margin:0;line-height:1.52}
-.pipeline{background:var(--navy);color:#edf4f2;border-radius:13px;padding:15px 16px}
-.pipeline-row{display:flex;align-items:center;gap:7px;flex-wrap:wrap;font-size:11.5px;line-height:1.35}
-.pipeline-row b{font-weight:650}
-.arrow{color:#e2b15d}
-.callout{margin-top:14px;border-left:3px solid var(--amber);padding:7px 11px;background:#fbf7ef;border-radius:0 8px 8px 0;font-size:12.5px;line-height:1.5;color:#45565c}
-.callout strong{color:var(--ink)}
-.mini3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-items:start}
-.mini{padding:15px 16px;border:1px solid var(--line);border-radius:13px;background:#fff}
-.mini:nth-child(1){background:#eef6f4}.mini:nth-child(2){background:#fbf3e6}.mini:nth-child(3){background:#f2eff7}
-.mini b{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--teal)}
-.mini h4{font-size:16px;margin:5px 0}
-.mini p{font-size:12.5px;line-height:1.47;color:var(--muted);margin:0}
-.research{background:var(--navy);color:white}
-.research .intro{color:#c7d4d8}
-.research .num{color:#e1b15f}
-.research .card{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.13)}
-.research .card p{color:#c7d4d8}
-.research .label{color:#9ed0bf}
-.toolgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;align-items:start}
-.tool{border:1px solid var(--line);background:var(--paper);border-radius:12px;padding:14px}
-.tool h3{font-size:14px;margin:0 0 5px}
-.tool p{font-size:11.5px;line-height:1.45;color:var(--muted);margin:0}
-.strengths{display:grid;grid-template-columns:1fr 1fr;column-gap:30px}
-.strength{padding:14px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:165px 1fr;gap:16px}
-.strength strong{font-size:13.5px}
-.strength span{font-size:12.5px;line-height:1.48;color:var(--muted)}
-.contact{padding:50px 0}
-.contactbox{display:flex;align-items:center;justify-content:space-between;gap:25px;background:linear-gradient(115deg,var(--teal-soft),#fffefa 58%,var(--amber-soft));border:1px solid #cfdad6;border-radius:18px;padding:25px 27px}
-.contactbox h2{font-size:28px;margin:4px 0 6px}
-.contactbox p{font-size:13.5px;color:var(--muted);margin:0;max-width:650px}
-.mailbtn{display:inline-flex;padding:11px 15px;border-radius:10px;background:var(--teal);color:#fff;text-decoration:none;font-size:13px;font-weight:750;white-space:nowrap}
-footer{border-top:1px solid var(--line);padding:26px 0 38px}
-.footerline{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
-.footerline strong{font-size:14px}
-.footerline p{font-size:11.5px;color:var(--muted);max-width:720px;margin:0;text-align:right}
-@media(max-width:850px){
- .navlinks a:not(.navmail){display:none}
- .hero-bottom,.case-head,.contactbox,.footerline{align-items:flex-start;flex-direction:column}
- .hero-contact{text-align:left}
- .section-head,.case-grid{grid-template-columns:1fr}
- .workflow{grid-template-columns:repeat(3,1fr)}
- .cards3,.mini3{grid-template-columns:1fr}
- .toolgrid{grid-template-columns:1fr 1fr}
- .strengths{grid-template-columns:1fr}
- .tags{justify-content:flex-start}
- .footerline p{text-align:left}
-}
-@media(max-width:540px){
- .wrap{padding:0 19px} .hero{padding:58px 0 46px} h1{font-size:45px}
- section{padding:46px 0} .workflow{grid-template-columns:1fr 1fr}
- .toolgrid{grid-template-columns:1fr} .strength{grid-template-columns:1fr;gap:4px}
- .case{padding:20px} .contactbox{padding:21px} .mailbtn{width:100%;justify-content:center}
+ --bg:#f7f6f1;
+ --paper:#fffefa;
+ --ink:#18313a;
+ --muted:#617077;
+ --line:#d9dfdc;
+ --teal:#176d69;
+ --teal-soft:#e9f3f1;
+ --amber:#b9812f;
+ --amber-soft:#f7eedf;
+ --lav:#f0edf6;
+ --navy:#17323c;
+ --max:1120px;
 }
 
-@media print{
- @page{size:A4;margin:8mm 8mm 9mm}
- html,body{background:#f7f6f1!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
- nav{display:none!important}
- .wrap{max-width:none!important;padding:0 7mm!important}
- .hero{padding:10mm 0 8mm!important}
- h1{font-size:38px!important;line-height:1.02!important;margin:8px 0 12px!important;max-width:170mm!important}
- .lead{font-size:13px!important;line-height:1.48!important;max-width:168mm!important}
- .hero-bottom{margin-top:16px!important}
- .pill{font-size:9px!important;padding:4px 7px!important}
- .hero-contact{min-width:48mm!important}
- section{padding:8mm 0!important}
- .section-head{grid-template-columns:25mm 1fr!important;gap:8mm!important;margin-bottom:5mm!important}
- h2{font-size:25px!important;margin-bottom:6px!important}
- .intro{font-size:11.5px!important;line-height:1.48!important;max-width:155mm!important}
- .workflow{gap:5px!important}
- .workflow div{padding:7px 5px 0!important}
- .workflow b{font-size:9.5px!important}.workflow span{font-size:8.2px!important;line-height:1.35!important}
- .cards3{gap:7px!important}.card{padding:10px 11px!important;border-radius:10px!important}
- .card h3{font-size:12.5px!important}.card p{font-size:9px!important;line-height:1.42!important}
- .case{padding:14px 15px!important;margin:7px 0!important;border-radius:12px!important;break-inside:avoid;page-break-inside:avoid}
- .case-head{margin-bottom:9px!important;gap:10px!important}
- .case h3{font-size:19px!important;margin:3px 0 4px!important}.case-lead{font-size:9.8px!important;line-height:1.4!important}
- .tags{gap:4px!important;max-width:58mm!important}.tag{font-size:7.5px!important;padding:3px 5px!important}
- .case-grid{gap:12px!important}.detail{margin-bottom:7px!important}.detail h4{font-size:7.5px!important;margin-bottom:2px!important}.detail p{font-size:9px!important;line-height:1.42!important}
- .pipeline{padding:9px 10px!important;border-radius:9px!important}.pipeline-row{font-size:8px!important;gap:4px!important}
- .callout{margin-top:7px!important;padding:5px 8px!important;font-size:8.5px!important;line-height:1.4!important}
- .mini3{gap:6px!important}.mini{padding:9px 10px!important}.mini b{font-size:7px!important}.mini h4{font-size:11px!important;margin:3px 0}.mini p{font-size:8.5px!important;line-height:1.4!important}
- .research{break-before:auto!important}
- .strengths{column-gap:16px!important}.strength{padding:8px 0!important;grid-template-columns:34mm 1fr!important;gap:8px!important;break-inside:avoid}
- .strength strong{font-size:9px!important}.strength span{font-size:8.5px!important;line-height:1.4!important}
- .toolgrid{gap:5px!important}.tool{padding:8px!important}.tool h3{font-size:9.5px!important}.tool p{font-size:7.8px!important;line-height:1.4!important}
- .contact{padding:5mm 0!important}.contactbox{padding:10px 12px!important;border-radius:11px!important}.contactbox p{font-size:9px!important}.mailbtn{padding:7px 10px!important;font-size:9px!important}
- footer{padding:5mm 0 3mm!important}.footerline strong{font-size:9px!important}.footerline p{font-size:7.5px!important;line-height:1.4!important;max-width:125mm!important}
- .section-head,.cards3,.workflow,.mini3,.toolgrid,.contactbox,.footerline{break-inside:avoid;page-break-inside:avoid}
- a{text-decoration:none!important}
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+ margin:0;
+ background:var(--bg);
+ color:var(--ink);
+ font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+ line-height:1.58;
 }
+
+a{color:inherit}
+
+.wrap{
+ max-width:var(--max);
+ margin:auto;
+ padding:0 30px;
+}
+
+/* NAVIGATION */
+
+nav{
+ position:sticky;
+ top:0;
+ z-index:20;
+ background:rgba(247,246,241,.94);
+ backdrop-filter:blur(12px);
+ border-bottom:1px solid var(--line);
+}
+
+.navin{
+ height:62px;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:20px;
+}
+
+.brand{
+ font-weight:800;
+ letter-spacing:-.02em;
+}
+
+.navlinks{
+ display:flex;
+ align-items:center;
+ gap:20px;
+ font-size:13px;
+ color:var(--muted);
+}
+
+.navlinks a{
+ text-decoration:none;
+}
+
+.navlinks a:hover{
+ color:var(--teal);
+}
+
+.lang-switch{
+ font-weight:750;
+ color:var(--teal)!important;
+}
+
+.navmail{
+ padding:7px 11px;
+ border:1px solid #b9cfca;
+ border-radius:9px;
+ color:var(--teal)!important;
+ background:#fff;
+}
+
+/* HERO */
+
+.hero{
+ padding:82px 0 66px;
+}
+
+.eyebrow,.label{
+ font-size:10.5px;
+ letter-spacing:.14em;
+ text-transform:uppercase;
+ font-weight:800;
+ color:var(--teal);
+}
+
+h1{
+ font-size:clamp(48px,7vw,78px);
+ line-height:1;
+ letter-spacing:-.052em;
+ margin:14px 0 20px;
+ max-width:900px;
+}
+
+.lead{
+ max-width:800px;
+ font-size:19px;
+ color:#43545b;
+ margin:0;
+}
+
+.hero-bottom{
+ display:flex;
+ align-items:flex-end;
+ justify-content:space-between;
+ gap:24px;
+ margin-top:28px;
+}
+
+.pills{
+ display:flex;
+ flex-wrap:wrap;
+ gap:7px;
+}
+
+.pill{
+ font-size:12px;
+ border:1px solid var(--line);
+ background:var(--paper);
+ padding:6px 9px;
+ border-radius:999px;
+}
+
+.hero-contact{
+ text-align:right;
+ min-width:250px;
+}
+
+.hero-contact span{
+ display:block;
+ font-size:10px;
+ text-transform:uppercase;
+ letter-spacing:.13em;
+ color:var(--muted);
+ margin-bottom:4px;
+}
+
+.hero-contact a{
+ font-size:14px;
+ font-weight:750;
+ color:var(--teal);
+ text-decoration:none;
+}
+
+/* SECTIONS */
+
+section{
+ padding:60px 0;
+ border-top:1px solid var(--line);
+}
+
+.section-head{
+ display:grid;
+ grid-template-columns:130px 1fr;
+ gap:26px;
+ margin-bottom:28px;
+}
+
+.num{
+ font:700 11px ui-monospace,SFMono-Regular,Menlo,monospace;
+ color:var(--amber);
+ padding-top:6px;
+}
+
+h2{
+ font-size:36px;
+ line-height:1.08;
+ letter-spacing:-.035em;
+ margin:0 0 10px;
+}
+
+.intro{
+ max-width:790px;
+ color:var(--muted);
+ font-size:16px;
+ margin:0;
+}
+
+.cards3{
+ display:grid;
+ grid-template-columns:repeat(3,minmax(0,1fr));
+ gap:12px;
+ align-items:start;
+}
+
+.card{
+ border:1px solid var(--line);
+ background:var(--paper);
+ border-radius:14px;
+ padding:17px 18px;
+}
+
+.card.teal{background:var(--teal-soft)}
+.card.amber{background:var(--amber-soft)}
+.card.lav{background:var(--lav)}
+
+.card h3{
+ font-size:17px;
+ line-height:1.25;
+ margin:5px 0 6px;
+ letter-spacing:-.015em;
+}
+
+.card p{
+ font-size:13px;
+ line-height:1.5;
+ color:var(--muted);
+ margin:0;
+}
+
+/* WORKFLOW */
+
+.workflow{
+ display:grid;
+ grid-template-columns:repeat(6,1fr);
+ gap:7px;
+ align-items:start;
+}
+
+.workflow div{
+ border-top:2px solid var(--teal);
+ padding:10px 8px 0;
+}
+
+.workflow b{
+ display:block;
+ font-size:13px;
+ margin-bottom:3px;
+}
+
+.workflow span{
+ font-size:11.5px;
+ color:var(--muted);
+ line-height:1.4;
+ display:block;
+}
+
+/* CASE STUDIES */
+
+.case{
+ border:1px solid var(--line);
+ background:var(--paper);
+ border-radius:18px;
+ padding:25px 26px;
+ margin:14px 0;
+}
+
+.case.featured{
+ background:linear-gradient(135deg,#edf6f3 0%,#fffefa 46%);
+}
+
+.case-head{
+ display:flex;
+ justify-content:space-between;
+ align-items:flex-start;
+ gap:20px;
+ margin-bottom:18px;
+}
+
+.case h3{
+ font-size:27px;
+ line-height:1.1;
+ letter-spacing:-.03em;
+ margin:5px 0 6px;
+}
+
+.case-lead{
+ font-size:14.5px;
+ color:var(--muted);
+ max-width:760px;
+ margin:0;
+}
+
+.tags{
+ display:flex;
+ flex-wrap:wrap;
+ gap:6px;
+ justify-content:flex-end;
+ max-width:330px;
+}
+
+.tag{
+ font-size:10.5px;
+ padding:5px 8px;
+ border-radius:999px;
+ background:#edf1ef;
+ white-space:nowrap;
+}
+
+.case-grid{
+ display:grid;
+ grid-template-columns:1.18fr .82fr;
+ gap:22px;
+ align-items:start;
+}
+
+.detail{
+ margin:0 0 14px;
+}
+
+.detail:last-child{
+ margin-bottom:0;
+}
+
+.detail h4{
+ font-size:10px;
+ letter-spacing:.13em;
+ text-transform:uppercase;
+ color:var(--teal);
+ margin:0 0 4px;
+}
+
+.detail p{
+ font-size:13.5px;
+ color:#526168;
+ margin:0;
+ line-height:1.52;
+}
+
+.pipeline{
+ background:var(--navy);
+ color:#edf4f2;
+ border-radius:13px;
+ padding:15px 16px;
+}
+
+.pipeline-row{
+ display:flex;
+ align-items:center;
+ gap:7px;
+ flex-wrap:wrap;
+ font-size:11.5px;
+ line-height:1.35;
+}
+
+.pipeline-row b{
+ font-weight:650;
+}
+
+.arrow{
+ color:#e2b15d;
+}
+
+.callout{
+ margin-top:14px;
+ border-left:3px solid var(--amber);
+ padding:7px 11px;
+ background:#fbf7ef;
+ border-radius:0 8px 8px 0;
+ font-size:12.5px;
+ line-height:1.5;
+ color:#45565c;
+}
+
+.callout strong{
+ color:var(--ink);
+}
+
+.mini3{
+ display:grid;
+ grid-template-columns:repeat(3,minmax(0,1fr));
+ gap:10px;
+ align-items:start;
+}
+
+.mini{
+ padding:15px 16px;
+ border:1px solid var(--line);
+ border-radius:13px;
+ background:#fff;
+}
+
+.mini:nth-child(1){background:#eef6f4}
+.mini:nth-child(2){background:#fbf3e6}
+.mini:nth-child(3){background:#f2eff7}
+
+.mini b{
+ font-size:10px;
+ text-transform:uppercase;
+ letter-spacing:.1em;
+ color:var(--teal);
+}
+
+.mini h4{
+ font-size:16px;
+ margin:5px 0;
+}
+
+.mini p{
+ font-size:12.5px;
+ line-height:1.47;
+ color:var(--muted);
+ margin:0;
+}
+
+/* RESEARCH */
+
+.research{
+ background:var(--navy);
+ color:white;
+}
+
+.research .intro{
+ color:#c7d4d8;
+}
+
+.research .num{
+ color:#e1b15f;
+}
+
+.research .card{
+ background:rgba(255,255,255,.07);
+ border-color:rgba(255,255,255,.13);
+}
+
+.research .card p{
+ color:#c7d4d8;
+}
+
+.research .label{
+ color:#9ed0bf;
+}
+
+/* TOOLKIT */
+
+.toolgrid{
+ display:grid;
+ grid-template-columns:repeat(5,minmax(0,1fr));
+ gap:9px;
+ align-items:start;
+}
+
+.tool{
+ border:1px solid var(--line);
+ background:var(--paper);
+ border-radius:12px;
+ padding:14px;
+}
+
+.tool h3{
+ font-size:14px;
+ margin:0 0 5px;
+}
+
+.tool p{
+ font-size:11.5px;
+ line-height:1.45;
+ color:var(--muted);
+ margin:0;
+}
+
+/* STRENGTHS */
+
+.strengths{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ column-gap:30px;
+}
+
+.strength{
+ padding:14px 0;
+ border-bottom:1px solid var(--line);
+ display:grid;
+ grid-template-columns:165px 1fr;
+ gap:16px;
+}
+
+.strength strong{
+ font-size:13.5px;
+}
+
+.strength span{
+ font-size:12.5px;
+ line-height:1.48;
+ color:var(--muted);
+}
+
+/* CONTACT */
+
+.contact{
+ padding:50px 0;
+}
+
+.contactbox{
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:25px;
+ background:linear-gradient(115deg,var(--teal-soft),#fffefa 58%,var(--amber-soft));
+ border:1px solid #cfdad6;
+ border-radius:18px;
+ padding:25px 27px;
+}
+
+.contactbox h2{
+ font-size:28px;
+ margin:4px 0 6px;
+}
+
+.contactbox p{
+ font-size:13.5px;
+ color:var(--muted);
+ margin:0;
+ max-width:650px;
+}
+
+.mailbtn{
+ display:inline-flex;
+ padding:11px 15px;
+ border-radius:10px;
+ background:var(--teal);
+ color:#fff;
+ text-decoration:none;
+ font-size:13px;
+ font-weight:750;
+ white-space:nowrap;
+}
+
+/* FOOTER */
+
+footer{
+ border-top:1px solid var(--line);
+ padding:26px 0 38px;
+}
+
+.footerline{
+ display:flex;
+ justify-content:space-between;
+ gap:20px;
+ align-items:flex-start;
+}
+
+.footerline strong{
+ font-size:14px;
+}
+
+.footerline p{
+ font-size:11.5px;
+ color:var(--muted);
+ max-width:720px;
+ margin:0;
+ text-align:right;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+ .navlinks{
+  gap:8px;
+ }
+
+ .navlinks a:not(.navmail):not(.lang-switch){
+  display:none;
+ }
+
+ .lang-switch{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:38px;
+  height:34px;
+  padding:0 10px;
+  border:1px solid #b9cfca;
+  border-radius:9px;
+  background:#fff;
+  color:var(--teal)!important;
+  font-size:12px;
+  font-weight:750;
+  text-decoration:none;
+ }
+
+ .navmail{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height:34px;
+  padding:0 10px;
+ }
+
+ .hero-bottom,
+ .case-head,
+ .contactbox,
+ .footerline{
+  align-items:flex-start;
+  flex-direction:column;
+ }
+
+ .hero-contact{
+  text-align:left;
+ }
+
+ .section-head,
+ .case-grid{
+  grid-template-columns:1fr;
+ }
+
+ .workflow{
+  grid-template-columns:repeat(3,1fr);
+ }
+
+ .cards3,
+ .mini3{
+  grid-template-columns:1fr;
+ }
+
+ .toolgrid{
+  grid-template-columns:1fr 1fr;
+ }
+
+ .strengths{
+  grid-template-columns:1fr;
+ }
+
+ .tags{
+  justify-content:flex-start;
+ }
+
+ .footerline p{
+  text-align:left;
+ }
+}
+
+@media(max-width:540px){
+
+ .wrap{
+  padding:0 19px;
+ }
+
+ .navin{
+  height:58px;
+  gap:10px;
+ }
+
+ .brand{
+  font-size:14px;
+  white-space:nowrap;
+ }
+
+ .navlinks{
+  gap:6px;
+ }
+
+ .lang-switch{
+  min-width:36px;
+  height:32px;
+  padding:0 9px;
+ }
+
+ .navmail{
+  height:32px;
+  padding:0 9px;
+  font-size:12px;
+ }
+
+ .hero{
+  padding:58px 0 46px;
+ }
+
+ h1{
+  font-size:45px;
+ }
+
+ section{
+  padding:46px 0;
+ }
+
+ .workflow{
+  grid-template-columns:1fr 1fr;
+ }
+
+ .toolgrid{
+  grid-template-columns:1fr;
+ }
+
+ .strength{
+  grid-template-columns:1fr;
+  gap:4px;
+ }
+
+ .case{
+  padding:20px;
+ }
+
+ .contactbox{
+  padding:21px;
+ }
+
+ .mailbtn{
+  width:100%;
+  justify-content:center;
+ }
+}
+
+/* PRINT */
+
+@media print{
+
+ @page{
+  size:A4;
+  margin:8mm 8mm 9mm;
+ }
+
+ html,body{
+  background:#f7f6f1!important;
+  -webkit-print-color-adjust:exact;
+  print-color-adjust:exact;
+ }
+
+ nav{
+  display:none!important;
+ }
+
+ .wrap{
+  max-width:none!important;
+  padding:0 7mm!important;
+ }
+
+ .hero{
+  padding:10mm 0 8mm!important;
+ }
+
+ h1{
+  font-size:38px!important;
+  line-height:1.02!important;
+  margin:8px 0 12px!important;
+  max-width:170mm!important;
+ }
+
+ .lead{
+  font-size:13px!important;
+  line-height:1.48!important;
+  max-width:168mm!important;
+ }
+
+ .hero-bottom{
+  margin-top:16px!important;
+ }
+
+ .pill{
+  font-size:9px!important;
+  padding:4px 7px!important;
+ }
+
+ .hero-contact{
+  min-width:48mm!important;
+ }
+
+ section{
+  padding:8mm 0!important;
+ }
+
+ .section-head{
+  grid-template-columns:25mm 1fr!important;
+  gap:8mm!important;
+  margin-bottom:5mm!important;
+ }
+
+ h2{
+  font-size:25px!important;
+  margin-bottom:6px!important;
+ }
+
+ .intro{
+  font-size:11.5px!important;
+  line-height:1.48!important;
+  max-width:155mm!important;
+ }
+
+ .workflow{
+  gap:5px!important;
+ }
+
+ .workflow div{
+  padding:7px 5px 0!important;
+ }
+
+ .workflow b{
+  font-size:9.5px!important;
+ }
+
+ .workflow span{
+  font-size:8.2px!important;
+  line-height:1.35!important;
+ }
+
+ .cards3{
+  gap:7px!important;
+ }
+
+ .card{
+  padding:10px 11px!important;
+  border-radius:10px!important;
+ }
+
+ .card h3{
+  font-size:12.5px!important;
+ }
+
+ .card p{
+  font-size:9px!important;
+  line-height:1.42!important;
+ }
+
+ .case{
+  padding:14px 15px!important;
+  margin:7px 0!important;
+  border-radius:12px!important;
+  break-inside:avoid;
+  page-break-inside:avoid;
+ }
+
+ .case-head{
+  margin-bottom:9px!important;
+  gap:10px!important;
+ }
+
+ .case h3{
+  font-size:19px!important;
+  margin:3px 0 4px!important;
+ }
+
+ .case-lead{
+  font-size:9.8px!important;
+  line-height:1.4!important;
+ }
+
+ .tags{
+  gap:4px!important;
+  max-width:58mm!important;
+ }
+
+ .tag{
+  font-size:7.5px!important;
+  padding:3px 5px!important;
+ }
+
+ .case-grid{
+  gap:12px!important;
+ }
+
+ .detail{
+  margin-bottom:7px!important;
+ }
+
+ .detail h4{
+  font-size:7.5px!important;
+  margin-bottom:2px!important;
+ }
+
+ .detail p{
+  font-size:9px!important;
+  line-height:1.42!important;
+ }
+
+ .pipeline{
+  padding:9px 10px!important;
+  border-radius:9px!important;
+ }
+
+ .pipeline-row{
+  font-size:8px!important;
+  gap:4px!important;
+ }
+
+ .callout{
+  margin-top:7px!important;
+  padding:5px 8px!important;
+  font-size:8.5px!important;
+  line-height:1.4!important;
+ }
+
+ .mini3{
+  gap:6px!important;
+ }
+
+ .mini{
+  padding:9px 10px!important;
+ }
+
+ .mini b{
+  font-size:7px!important;
+ }
+
+ .mini h4{
+  font-size:11px!important;
+  margin:3px 0;
+ }
+
+ .mini p{
+  font-size:8.5px!important;
+  line-height:1.4!important;
+ }
+
+ .research{
+  break-before:auto!important;
+ }
+
+ .strengths{
+  column-gap:16px!important;
+ }
+
+ .strength{
+  padding:8px 0!important;
+  grid-template-columns:34mm 1fr!important;
+  gap:8px!important;
+  break-inside:avoid;
+ }
+
+ .strength strong{
+  font-size:9px!important;
+ }
+
+ .strength span{
+  font-size:8.5px!important;
+  line-height:1.4!important;
+ }
+
+ .toolgrid{
+  gap:5px!important;
+ }
+
+ .tool{
+  padding:8px!important;
+ }
+
+ .tool h3{
+  font-size:9.5px!important;
+ }
+
+ .tool p{
+  font-size:7.8px!important;
+  line-height:1.4!important;
+ }
+
+ .contact{
+  padding:5mm 0!important;
+ }
+
+ .contactbox{
+  padding:10px 12px!important;
+  border-radius:11px!important;
+ }
+
+ .contactbox p{
+  font-size:9px!important;
+ }
+
+ .mailbtn{
+  padding:7px 10px!important;
+  font-size:9px!important;
+ }
+
+ footer{
+  padding:5mm 0 3mm!important;
+ }
+
+ .footerline strong{
+  font-size:9px!important;
+ }
+
+ .footerline p{
+  font-size:7.5px!important;
+  line-height:1.4!important;
+  max-width:125mm!important;
+ }
+
+ .section-head,
+ .cards3,
+ .workflow,
+ .mini3,
+ .toolgrid,
+ .contactbox,
+ .footerline{
+  break-inside:avoid;
+  page-break-inside:avoid;
+ }
+
+ a{
+  text-decoration:none!important;
+ }
+}
+
 </style>
 </head>
+
 <body>
-<nav><div class="wrap navin"><div class="brand">Şule Özmen</div><div class="navlinks">
-<a href="#approach">Approach</a><a href="#work">Work</a><a href="#research">Research</a><a href="#toolkit">Toolkit</a><a href="#strengths">Strengths</a><a href="portfolio-tr.html" aria-label="Türkçe portföy">TR</a><a class="navmail" href="mailto:suleozxmen@gmail.com">Contact</a>
-</div></div></nav>
-<header class="hero"><div class="wrap">
-<div class="eyebrow">Selected Data &amp; Analytics Work · 2025–2026</div>
-<h1>Turning operational problems into structured data, analytics and repeatable workflows.</h1>
-<p class="lead">I work as a Data Analytics Engineer at a large-scale electricity distribution company, across enterprise data, non-technical loss analytics, reporting, decision support and process automation. My focus is not on forcing a tool onto a problem: I aim to understand the operational question, make the data reliable and usable, choose an appropriate method, and leave the workflow more systematic, explainable and reusable.</p>
-<div class="hero-bottom">
-<div class="pills"><span class="pill">SQL &amp; Oracle DW</span><span class="pill">Python</span><span class="pill">Power BI</span><span class="pill">Machine Learning</span><span class="pill">Selenium</span><span class="pill">VBA / Excel</span><span class="pill">OBIEE</span></div></div>
-</div></header>
-<section id="approach"><div class="wrap">
-<div class="section-head"><div class="num">01 / APPROACH</div><div><h2>Problem first. Method second.</h2><p class="intro">Since joining electricity distribution, I have worked with three recurring questions: How can this process be systematized? How can the underlying data be made meaningful and used more effectively? How should the analysis be communicated so that a chart becomes a decision story rather than a visual endpoint?</p></div></div>
-<div class="workflow">
-<div><b>Observe</b><span>Find friction, repetition or an unanswered question.</span></div>
-<div><b>Learn</b><span>Understand the domain and data-generating process.</span></div>
-<div><b>Translate</b><span>Turn business language into measurable signals.</span></div>
-<div><b>Research</b><span>Explore methods that may fit the problem.</span></div>
-<div><b>Build</b><span>Use SQL, Python, BI, ML or automation as needed.</span></div>
-<div><b>Operationalize</b><span>Validate, communicate and make it reusable.</span></div>
-</div>
-</div></section>
-<section><div class="wrap">
-<div class="section-head"><div class="num">02 / CONTEXT</div><div><h2>Learning the business and the data at the same time.</h2><p class="intro">Electricity distribution was not a direct extension of my academic training. Becoming effective meant learning the technical and operational domain while navigating a large-scale enterprise data environment serving millions of customers. Beyond applying methods I already knew, I have actively explored where analytics, machine learning and automation can create new value within the domain.</p></div></div>
-<div class="cards3">
-<div class="card teal"><div class="label">Domain learning</div><h3>Understanding the system</h3><p>Metering, consumption, field operations, non-technical losses, institutional reporting and operational constraints.</p></div>
-<div class="card amber"><div class="label">Data-system learning</div><h3>Understanding representation</h3><p>Grains, historical structures, entity relationships, data-quality limitations and the business meaning behind warehouse fields.</p></div>
-<div class="card lav"><div class="label">Applied research</div><h3>Finding what can work</h3><p>Testing how anomaly detection, scoring, machine learning, automation and visualization methods translate to the data actually available.</p></div>
-</div>
-</div></section>
-<section id="work"><div class="wrap">
-<div class="section-head"><div class="num">03 / SELECTED WORK</div><div><h2>Selected case studies</h2><p class="intro">The work below is reconstructed for public presentation. Customer-level data, internal system names, access details, proprietary table structures and sensitive business logic are intentionally omitted or generalized.</p></div></div>
-<article class="case featured">
-<div class="case-head"><div><div class="label">Flagship case · In development</div><h3>Learning from Historical Non-Technical Loss Events</h3><p class="case-lead">Exploring whether confirmed historical non-technical loss events can reveal behavioral patterns useful for future risk prioritization.</p></div><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Feature Engineering</span><span class="tag">Machine Learning</span></div></div>
-<div class="case-grid"><div>
-<div class="detail"><h4>The question</h4><p>Could historical inspection outcomes become a structured analytical learning problem rather than remain only retrospective records?</p></div>
-<div class="detail"><h4>The difficult part</h4><p>Repeated events, incomplete time series, unequal measurement density and event timing affected what could safely be learned.</p></div>
-<div class="detail"><h4>Analytical design</h4><p>I structured the work around non-technical loss events, built pre-event / event / post-event windows, engineered behavioral features and segmented chronology quality before model experiments.</p></div>
-</div><div>
-<div class="pipeline"><div class="pipeline-row"><b>Historical events</b><span class="arrow">→</span><b>Time windows</b><span class="arrow">→</span><b>Behavioral features</b><span class="arrow">→</span><b>Quality segmentation</b><span class="arrow">→</span><b>Model validation</b></div></div>
-<div class="callout"><strong>Engineering decision.</strong> Modeling did not start with an algorithm. I first separated observations with usable chronology from those whose history was too incomplete to support the same analytical claims.</div>
-<div class="callout"><strong>Scope discipline.</strong> The current prototype is historical behavioral classification, not a production non-technical loss detector. Deployable scoring requires a separate reference-date pipeline that cannot use future information.</div>
-</div></div>
-</article>
-<article class="case">
-<div class="case-head"><div><div class="label">Analytical risk engineering</div><h3>From SQL Queries to Behavioral Risk Signals</h3><p class="case-lead">Turning billing and consumption history into reproducible, explainable prioritization logic.</p></div><div class="tags"><span class="tag">Advanced SQL</span><span class="tag">Window Functions</span><span class="tag">Risk Scoring</span></div></div>
-<div class="mini3">
-<div class="mini"><b>Own history</b><h4>Temporal change</h4><p>Period-over-period demand and normalized daily-consumption changes using window functions, thresholds and persistence checks.</p></div>
-<div class="mini"><b>Expected behavior</b><h4>Capacity &amp; peer benchmarks</h4><p>Expected consumption bands based on technical capacity, observed demand and comparable segments — low or high relative to a defined reference.</p></div>
-<div class="mini"><b>Actionability</b><h4>Explainable risk logic</h4><p>Multiple weak signals combined into operational risk classes and reason codes so analysts can see both priority and rationale.</p></div>
-</div>
-<div class="callout"><strong>Why it matters.</strong> Repeated analyst comparisons become transparent mathematical rules in SQL: reproducible, reviewable and easier to extend.</div>
-</article>
-<article class="case">
-<div class="case-head"><div><div class="label">Process automation</div><h3>From Manual Reporting to an Automated Data Pipeline</h3><p class="case-lead">Automating repetitive report retrieval and turning it into a recoverable workflow for operational analysis.</p></div><div class="tags"><span class="tag">Python</span><span class="tag">Selenium</span><span class="tag">Validation</span><span class="tag">Scheduling</span></div></div>
-<div class="case-grid"><div>
-<div class="detail"><h4>Pain point</h4><p>Analysis depended on repeatedly navigating an internal reporting interface, configuring date windows, waiting for exports and preparing downloaded files.</p></div>
-<div class="detail"><h4>How it evolved</h4><p>The first goal was fixed-window report retrieval. It grew into dynamic date handling, download checks, validation, structured storage, duplicate protection, logging and catch-up logic for missing periods.</p></div>
-<div class="detail"><h4>Why Selenium?</h4><p>The required workflow was exposed through a user interface rather than an accessible integration endpoint, making browser automation a pragmatic integration layer.</p></div>
-</div><div class="pipeline"><div class="pipeline-row"><b>Schedule</b><span class="arrow">→</span><b>Missing-period check</b><span class="arrow">→</span><b>Browser automation</b><span class="arrow">→</span><b>Validation</b><span class="arrow">→</span><b>Processing</b><span class="arrow">→</span><b>Log</b></div></div></div>
-</article>
-<article class="case">
-<div class="case-head"><div><div class="label">Team workflow improvement</div><h3>Standardizing Repetitive Data Preparation</h3><p class="case-lead">A small VBA utility that captures the working philosophy behind many of my projects.</p></div><div class="tags"><span class="tag">OBIEE</span><span class="tag">Excel</span><span class="tag">VBA</span></div></div>
-<div class="case-grid"><div>
-<div class="detail"><h4>What I noticed</h4><p>A detailed operational export used in field analysis contained dozens of columns, and analysts repeatedly removed the same unnecessary fields by hand.</p></div>
-<div class="detail"><h4>Before coding</h4><p>I asked the engineers using the report which fields were actually required and converted the shared requirement into a reusable checklist.</p></div>
-<div class="detail"><h4>Build</h4><p>The macro evaluates report headers against the agreed keep-list and removes fields outside the analysis scope automatically.</p></div>
-</div><div><div class="pipeline"><div class="pipeline-row"><b>Export</b><span class="arrow">→</span><b>Header check</b><span class="arrow">→</span><b>Approved fields</b><span class="arrow">→</span><b>Analysis-ready dataset</b></div></div>
-<div class="callout">The value was not technical complexity. It was eliminating a repetitive preparation step and standardizing how the team started the analysis.</div></div></div>
-</article>
-<article class="case">
-<div class="case-head"><div><div class="label">Decision support &amp; delivery</div><h3>BI, Institutional Reporting &amp; Analytical Delivery</h3></div><div class="tags"><span class="tag">Power BI</span><span class="tag">OBIEE</span><span class="tag">SQL</span><span class="tag">Python</span></div></div>
-<div class="mini3">
-<div class="mini"><b>Power BI</b><h4>Story before chart</h4><p>KPI hierarchy, trend, comparison, segmentation and drill-down designed around the decision path rather than visual density.</p></div>
-<div class="mini"><b>Institutional reporting</b><h4>Requirement → validated output</h4><p>SQL-based datasets for sector institutions and internal stakeholders, translating reporting requirements into extraction and validation logic.</p></div>
-<div class="mini"><b>Python-assisted delivery</b><h4>Finish the workflow</h4><p>Additional transformation, consolidation and repeatable post-processing when SQL or spreadsheet outputs need a final analytical layer.</p></div>
-</div>
-</article>
-</div></section>
-<section class="research" id="research" style="padding-top:11mm!important; padding-bottom:18mm!important;"><div class="wrap">
-<div class="section-head"><div class="num">04 / RESEARCH</div><div><h2>Research behind the work</h2><p class="intro">My reading is not limited to the electricity sector. I study domain material and general analytical methods, then test what actually survives contact with real operational data.</p></div></div>
-<div class="cards3">
-<div class="card"><div class="label">Domain research</div><h3>Utility analytics &amp; metering</h3><p>Electricity distribution, advanced metering, non-technical losses, consumption behavior and sector reporting.</p></div>
-<div class="card"><div class="label">Method research</div><h3>Anomaly detection &amp; ML</h3><p>Unsupervised learning, classification, risk scoring, feature engineering, validation and explainability.</p></div>
-<div class="card"><div class="label">Translation</div><h3>Research → operational question</h3><p>Check assumptions, labels, data availability and constraints before deciding whether a method belongs in the solution.</p></div>
-</div>
-</div></section>
-<section id="strengths" style="break-before:page; page-break-before:always; padding-top:20mm!important; padding-bottom:17mm!important;"><div class="wrap">
-<div class="section-head"><div class="num">05 / STRENGTHS</div><div><h2>What I bring beyond the toolset</h2><p class="intro">The strongest pattern across my work is connecting a business question to a usable data definition, a repeatable workflow and an output someone can act on.</p></div></div>
-<div class="strengths">
-<div class="strength"><strong>Structured problem solving</strong><span>Break ambiguity into definitions, assumptions, data requirements and decision points before choosing a technical solution.</span></div>
-<div class="strength"><strong>Systems thinking</strong><span>Look beyond a one-off output and ask whether the surrounding process can be standardized or automated.</span></div>
-<div class="strength"><strong>Learning agility</strong><span>Build domain knowledge while navigating a large enterprise data environment and learning methods the problem requires.</span></div>
-<div class="strength"><strong>Analytical communication</strong><span>Design dashboards, reason codes and reports around what the reader needs to understand and do next.</span></div>
-<div class="strength"><strong>Pragmatic engineering</strong><span>Use SQL, VBA, Python, Selenium or BI according to the environment instead of forcing every problem into one tool.</span></div>
-<div class="strength"><strong>AI-assisted productivity</strong><span>Use AI to accelerate research, prototyping and debugging while keeping domain interpretation, validation and final decisions deliberate.</span></div>
-</div>
-</div></section>
-<section id="toolkit" style="padding-top:17mm!important; padding-bottom:17mm!important;"><div class="wrap">
-<div class="section-head"><div class="num">06 / TOOLKIT</div><div><h2>Tools follow the problem</h2><p class="intro">No proficiency bars — only the technologies I currently use to move from raw operational data to analysis, automation and decision support.</p></div></div>
-<div class="toolgrid">
-<div class="tool"><h3>Data &amp; SQL</h3><p>Oracle SQL · MS SQL · Enterprise DW · window functions · data validation · analytical queries</p></div>
-<div class="tool"><h3>Programming &amp; ML</h3><p>Python · pandas · scikit-learn · preprocessing · feature engineering · model experimentation</p></div>
-<div class="tool"><h3>BI &amp; Reporting</h3><p>Power BI · DAX · Power Query · data modeling · OBIEE · dashboard storytelling</p></div>
-<div class="tool"><h3>Automation</h3><p>Selenium · VBA · Excel macros · file processing · workflow controls</p></div>
-<div class="tool"><h3>Applied Analytics</h3><p>Non-technical loss analytics · risk scoring · anomaly detection · segmentation · operational prioritization</p></div>
-</div>
-</div></section>
-<section class="contact" id="contact" style="padding-top:14mm!important; padding-bottom:14mm!important;"><div class="wrap">
-<div class="contactbox"><div><div class="label">Professional contact</div><p>For portfolio and professional enquiries:</p></div><a class="mailbtn" href="mailto:suleozxmen@gmail.com">suleozxmen@gmail.com</a></div>
-</div></section>
-<footer><div class="wrap footerline">
-<strong>Şule Özmen · Data Analytics Engineer</strong>
-<p>This portfolio is designed to show the substance of my work and problem-solving approach while preserving organizational confidentiality. Customer-level information, internal system names, credentials, proprietary table structures and sensitive business logic are intentionally excluded.</p>
-</div></footer>
-</body></html>
+
+<nav>
+ <div class="wrap navin">
+  <div class="brand">Şule Özmen</div>
+
+  <div class="navlinks">
+   <a href="#approach">Approach</a>
+   <a href="#work">Work</a>
+   <a href="#research">Research</a>
+   <a href="#toolkit">Toolkit</a>
+   <a href="#strengths">Strengths</a>
+   <a href="portfolio-tr.html" class="lang-switch" aria-label="Türkçe portföy">TR</a>
+   <a class="navmail" href="mailto:suleozxmen@gmail.com">Contact</a>
+  </div>
+ </div>
+</nav>
+
+<header class="hero">
+ <div class="wrap">
+  <div class="eyebrow">Selected Data &amp; Analytics Work · 2025–2026</div>
+
+  <h1>Turning operational problems into structured data, analytics and repeatable workflows.</h1>
+
+  <p class="lead">
+   I work as a Data Analytics Engineer at a large-scale electricity distribution company, across enterprise data, non-technical loss analytics, reporting, decision support and process automation. My focus is not on forcing a tool onto a problem: I aim to understand the operational question, make the data reliable and usable, choose an appropriate method, and leave the workflow more systematic, explainable and reusable.
+  </p>
+
+  <div class="hero-bottom">
+   <div class="pills">
+    <span class="pill">SQL &amp; Oracle DW</span>
+    <span class="pill">Python</span>
+    <span class="pill">Power BI</span>
+    <span class="pill">Machine Learning</span>
+    <span class="pill">Selenium</span>
+    <span class="pill">VBA / Excel</span>
+    <span class="pill">OBIEE</span>
+   </div>
+  </div>
+ </div>
+</header>
+
+<section id="approach">
+ <div class="wrap">
+
+  <div class="section-head">
+   <div class="num">01 / APPROACH</div>
+
+   <div>
+    <h2>Problem first. Method second.</h2>
+
+    <p class="intro">
+     Since joining electricity distribution, I have worked with three recurring questions: How can this process be systematized? How can the underlying data be made meaningful and used more effectively? How should the analysis be communicated so that a chart becomes a decision story rather than a visual endpoint?
+    </p>
+   </div>
+  </div>
+
+  <div class="workflow">
+   <div><b>Observe</b><span>Find friction, repetition or an unanswered question.</span></div>
+   <div><b>Learn</b><span>Understand the domain and data-generating process.</span></div>
+   <div><b>Translate</b><span>Turn business language into measurable signals.</span></div>
+   <div><b>Research</b><span>Explore methods that may fit the problem.</span></div>
+   <div><b>Build</b><span>Use SQL, Python, BI, ML or automation as needed.</span></div>
+   <div><b>Operationalize</b><span>Validate, communicate and make it reusable.</span></div>
+  </div>
+
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+
+  <div class="section-head">
+   <div class="num">02 / CONTEXT</div>
+
+   <div>
+    <h2>Learning the business and the data at the same time.</h2>
+
+    <p class="intro">
+     Electricity distribution was not a direct extension of my academic training. Becoming effective meant learning the technical and operational domain while navigating a large-scale enterprise data environment serving millions of customers. Beyond applying methods I already knew, I have actively explored where analytics, machine learning and automation can create new value within the domain.
+    </p>
+   </div>
+  </div>
+
+  <div class="cards3">
+
+   <div class="card teal">
+    <div class="label">Domain learning</div>
+    <h3>Understanding the system</h3>
+    <p>Metering, consumption, field operations, non-technical losses, institutional reporting and operational constraints.</p>
+   </div>
+
+   <div class="card amber">
+    <div class="label">Data-system learning</div>
+    <h3>Understanding representation</h3>
+    <p>Grains, historical structures, entity relationships, data-quality limitations and the business meaning behind warehouse fields.</p>
+   </div>
+
+   <div class="card lav">
+    <div class="label">Applied research</div>
+    <h3>Finding what can work</h3>
+    <p>Testing how anomaly detection, scoring, machine learning, automation and visualization methods translate to the data actually available.</p>
+   </div>
+
+  </div>
+
+ </div>
+</section>
+
+<section id="work">
+ <div class="wrap">
+
+  <div class="section-head">
+   <div class="num">03 / SELECTED WORK</div>
+
+   <div>
+    <h2>Selected case studies</h2>
+
+    <p class="intro">
+     The work below is reconstructed for public presentation. Customer-level data, internal system names, access details, proprietary table structures and sensitive business logic are intentionally omitted or generalized.
+    </p>
+   </div>
+  </div>
+
+  <article class="case featured">
+
+   <div class="case-head">
+    <div>
+     <div class="label">Flagship case · In development</div>
+     <h3>Learning from Historical Non-Technical Loss Events</h3>
+     <p class="case-lead">Exploring whether confirmed historical non-technical loss events can reveal behavioral patterns useful for future risk prioritization.</p>
+    </div>
+
+    <div class="tags">
+     <span class="tag">Python</span>
+     <span class="tag">SQL</span>
+     <span class="tag">Feature Engineering</span>
+     <span class="tag">Machine Learning</span>
+    </div>
+   </div>
+
+   <div class="case-grid">
+
+    <div>
+     <div class="detail">
+      <h4>The question</h4>
+      <p>Could historical inspection outcomes become a structured analytical learning problem rather than remain only retrospective records?</p>
+     </div>
+
+     <div class="detail">
+      <h4>The difficult part</h4>
+      <p>Repeated events, incomplete time series, unequal measurement density and event timing affected what could safely be learned.</p>
+     </div>
+
+     <div class="detail">
+      <h4>Analytical design</h4>
+      <p>I structured the work around non-technical loss events, built pre-event / event / post-event windows, engineered behavioral features and segmented chronology quality before model experiments.</p>
+     </div>
+    </div>
+
+    <div>
+
+     <div class="pipeline">
+      <div class="pipeline-row">
+       <b>Historical events</b>
+       <span class="arrow">→</span>
+       <b>Time windows</b>
+       <span class="arrow">→</span>
+       <b>Behavioral features</b>
+       <span class="arrow">→</span>
+       <b>Quality segmentation</b>
+       <span class="arrow">→</span>
+       <b>Model validation</b>
+      </div>
+     </div>
+
+     <div class="callout">
+      <strong>Engineering decision.</strong>
+      Modeling did not start with an algorithm. I first separated observations with usable chronology from those whose history was too incomplete to support the same analytical claims.
+     </div>
+
+     <div class="callout">
+      <strong>Scope discipline.</strong>
+      The current prototype is historical behavioral classification, not a production non-technical loss detector. Deployable scoring requires a separate reference-date pipeline that cannot use future information.
+     </div>
+
+    </div>
+
+   </div>
+
+  </article>
+
+  <article class="case">
+
+   <div class="case-head">
+
+    <div>
+     <div class="label">Analytical risk engineering</div>
+     <h3>From SQL Queries to Behavioral Risk Signals</h3>
+     <p class="case-lead">Turning billing and consumption history into reproducible, explainable prioritization logic.</p>
+    </div>
+
+    <div class="tags">
+     <span class="tag">Advanced SQL</span>
+     <span class="tag">Window Functions</span>
+     <span class="tag">Risk Scoring</span>
+    </div>
+
+   </div>
+
+   <div class="mini3">
+
+    <div class="mini">
+     <b>Own history</b>
+     <h4>Temporal change</h4>
+     <p>Period-over-period demand and normalized daily-consumption changes using window functions, thresholds and persistence checks.</p>
+    </div>
+
+    <div class="mini">
+     <b>Expected behavior</b>
+     <h4>Capacity &amp; peer benchmarks</h4>
+     <p>Expected consumption bands based on technical capacity, observed demand and comparable segments — low or high relative to a defined reference.</p>
+    </div>
+
+    <div class="mini">
+     <b>Actionability</b>
+     <h4>Explainable risk logic</h4>
+     <p>Multiple weak signals combined into operational risk classes and reason codes so analysts can see both priority and rationale.</p>
+    </div>
+
+   </div>
+
+   <div class="callout">
+    <strong>Why it matters.</strong>
+    Repeated analyst comparisons become transparent mathematical rules in SQL: reproducible, reviewable and easier to extend.
+   </div>
+
+  </article>
+
+  <article class="case">
+
+   <div class="case-head">
+
+    <div>
+     <div class="label">Process automation</div>
+     <h3>From Manual Reporting to an Automated Data Pipeline</h3>
+     <p class="case-lead">Automating repetitive report retrieval and turning it into a recoverable workflow for operational analysis.</p>
+    </div>
+
+    <div class="tags">
+     <span class="tag">Python</span>
+     <span class="tag">Selenium</span>
+     <span class="tag">Validation</span>
+     <span class="tag">Scheduling</span>
+    </div>
+
+   </div>
+
+   <div class="case-grid">
+
+    <div>
+
+     <div class="detail">
+      <h4>Pain point</h4>
+      <p>Analysis depended on repeatedly navigating an internal reporting interface, configuring date windows, waiting for exports and preparing downloaded files.</p>
+     </div>
+
+     <div class="detail">
+      <h4>How it evolved</h4>
+      <p>The first goal was fixed-window report retrieval. It grew into dynamic date handling, download checks, validation, structured storage, duplicate protection, logging and catch-up logic for missing periods.</p>
+     </div>
+
+     <div class="detail">
+      <h4>Why Selenium?</h4>
+      <p>The required workflow was exposed through a user interface rather than an accessible integration endpoint, making browser automation a pragmatic integration layer.</p>
+     </div>
+
+    </div>
+
+    <div class="pipeline">
+     <div class="pipeline-row">
+      <b>Schedule</b>
+      <span class="arrow">→</span>
+      <b>Missing-period check</b>
+      <span class="arrow">→</span>
+      <b>Browser automation</b>
+      <span class="arrow">→</span>
+      <b>Validation</b>
+      <span class="arrow">→</span>
+      <b>Processing</b>
+      <span class="arrow">→</span>
+      <b>Log</b>
+     </div>
+    </div>
+
+   </div>
+
+  </article>
+
+  <article class="case">
+
+   <div class="case-head">
+
+    <div>
+     <div class="label">Team workflow improvement</div>
+     <h3>Standardizing Repetitive Data Preparation</h3>
+     <p class="case-lead">A small VBA utility that captures the working philosophy behind many of my projects.</p>
+    </div>
+
+    <div class="tags">
+     <span class="tag">OBIEE</span>
+     <span class="tag">Excel</span>
+     <span class="tag">VBA</span>
+    </div>
+
+   </div>
+
+   <div class="case-grid">
+
+    <div>
+
+     <div class="detail">
+      <h4>What I noticed</h4>
+      <p>A detailed operational export used in field analysis contained dozens of columns, and analysts repeatedly removed the same unnecessary fields by hand.</p>
+     </div>
+
+     <div class="detail">
+      <h4>Before coding</h4>
+      <p>I asked the engineers using the report which fields were actually required and converted the shared requirement into a reusable checklist.</p>
+     </div>
+
+     <div class="detail">
+      <h4>Build</h4>
+      <p>The macro evaluates report headers against the agreed keep-list and removes fields outside the analysis scope automatically.</p>
+     </div>
+
+    </div>
+
+    <div>
+
+     <div class="pipeline">
+      <div class="pipeline-row">
+       <b>Export</b>
+       <span class="arrow">→</span>
+       <b>Header check</b>
+       <span class="arrow">→</span>
+       <b>Approved fields</b>
+       <span class="arrow">→</span>
+       <b>Analysis-ready dataset</b>
+      </div>
+     </div>
+
+     <div class="callout">
+      The value was not technical complexity. It was eliminating a repetitive preparation step and standardizing how the team started the analysis.
+     </div>
+
+    </div>
+
+   </div>
+
+  </article>
+
+  <article class="case">
+
+   <div class="case-head">
+
+    <div>
+     <div class="label">Decision support &amp; delivery</div>
+     <h3>BI, Institutional Reporting &amp; Analytical Delivery</h3>
+    </div>
+
+    <div class="tags">
+     <span class="tag">Power BI</span>
+     <span class="tag">OBIEE</span>
+     <span class="tag">SQL</span>
+     <span class="tag">Python</span>
+    </div>
+
+   </div>
+
+   <div class="mini3">
+
+    <div class="mini">
+     <b>Power BI</b>
+     <h4>Story before chart</h4>
+     <p>KPI hierarchy, trend, comparison, segmentation and drill-down designed around the decision path rather than visual density.</p>
+    </div>
+
+    <div class="mini">
+     <b>Institutional reporting</b>
+     <h4>Requirement → validated output</h4>
+     <p>SQL-based datasets for sector institutions and internal stakeholders, translating reporting requirements into extraction and validation logic.</p>
+    </div>
+
+    <div class="mini">
+     <b>Python-assisted delivery</b>
+     <h4>Finish the workflow</h4>
+     <p>Additional transformation, consolidation and repeatable post-processing when SQL or spreadsheet outputs need a final analytical layer.</p>
+    </div>
+
+   </div>
+
+  </article>
+
+ </div>
+</section>
+
+<section class="research" id="research" style="padding-top:11mm!important; padding-bottom:18mm!important;">
+ <div class="wrap">
+
+  <div class="section-head">
+
+   <div class="num">04 / RESEARCH</div>
+
+   <div>
+    <h2>Research behind the work</h2>
+    <p class="intro">My reading is not limited to the electricity sector. I study domain material and general analytical methods, then test what actually survives contact with real operational data.</p>
+   </div>
+
+  </div>
+
+  <div class="cards3">
+
+   <div class="card">
+    <div class="label">Domain research</div>
+    <h3>Utility analytics &amp; metering</h3>
+    <p>Electricity distribution, advanced metering, non-technical losses, consumption behavior and sector reporting.</p>
+   </div>
+
+   <div class="card">
+    <div class="label">Method research</div>
+    <h3>Anomaly detection &amp; ML</h3>
+    <p>Unsupervised learning, classification, risk scoring, feature engineering, validation and explainability.</p>
+   </div>
+
+   <div class="card">
+    <div class="label">Translation</div>
+    <h3>Research → operational question</h3>
+    <p>Check assumptions, labels, data availability and constraints before deciding whether a method belongs in the solution.</p>
+   </div>
+
+  </div>
+
+ </div>
+</section>
+
+<section id="strengths" style="break-before:page; page-break-before:always; padding-top:20mm!important; padding-bottom:17mm!important;">
+ <div class="wrap">
+
+  <div class="section-head">
+
+   <div class="num">05 / STRENGTHS</div>
+
+   <div>
+    <h2>What I bring beyond the toolset</h2>
+    <p class="intro">The strongest pattern across my work is connecting a business question to a usable data definition, a repeatable workflow and an output someone can act on.</p>
+   </div>
+
+  </div>
+
+  <div class="strengths">
+
+   <div class="strength">
+    <strong>Structured problem solving</strong>
+    <span>Break ambiguity into definitions, assumptions, data requirements and decision points before choosing a technical solution.</span>
+   </div>
+
+   <div class="strength">
+    <strong>Systems thinking</strong>
+    <span>Look beyond a one-off output and ask whether the surrounding process can be standardized or automated.</span>
+   </div>
+
+   <div class="strength">
+    <strong>Learning agility</strong>
+    <span>Build domain knowledge while navigating a large enterprise data environment and learning methods the problem requires.</span>
+   </div>
+
+   <div class="strength">
+    <strong>Analytical communication</strong>
+    <span>Design dashboards, reason codes and reports around what the reader needs to understand and do next.</span>
+   </div>
+
+   <div class="strength">
+    <strong>Pragmatic engineering</strong>
+    <span>Use SQL, VBA, Python, Selenium or BI according to the environment instead of forcing every problem into one tool.</span>
+   </div>
+
+   <div class="strength">
+    <strong>AI-assisted productivity</strong>
+    <span>Use AI to accelerate research, prototyping and debugging while keeping domain interpretation, validation and final decisions deliberate.</span>
+   </div>
+
+  </div>
+
+ </div>
+</section>
+
+<section id="toolkit" style="padding-top:17mm!important; padding-bottom:17mm!important;">
+ <div class="wrap">
+
+  <div class="section-head">
+
+   <div class="num">06 / TOOLKIT</div>
+
+   <div>
+    <h2>Tools follow the problem</h2>
+    <p class="intro">No proficiency bars — only the technologies I currently use to move from raw operational data to analysis, automation and decision support.</p>
+   </div>
+
+  </div>
+
+  <div class="toolgrid">
+
+   <div class="tool">
+    <h3>Data &amp; SQL</h3>
+    <p>Oracle SQL · MS SQL · Enterprise DW · window functions · data validation · analytical queries</p>
+   </div>
+
+   <div class="tool">
+    <h3>Programming &amp; ML</h3>
+    <p>Python · pandas · scikit-learn · preprocessing · feature engineering · model experimentation</p>
+   </div>
+
+   <div class="tool">
+    <h3>BI &amp; Reporting</h3>
+    <p>Power BI · DAX · Power Query · data modeling · OBIEE · dashboard storytelling</p>
+   </div>
+
+   <div class="tool">
+    <h3>Automation</h3>
+    <p>Selenium · VBA · Excel macros · file processing · workflow controls</p>
+   </div>
+
+   <div class="tool">
+    <h3>Applied Analytics</h3>
+    <p>Non-technical loss analytics · risk scoring · anomaly detection · segmentation · operational prioritization</p>
+   </div>
+
+  </div>
+
+ </div>
+</section>
+
+<section class="contact" id="contact" style="padding-top:14mm!important; padding-bottom:14mm!important;">
+ <div class="wrap">
+
+  <div class="contactbox">
+
+   <div>
+    <div class="label">Professional contact</div>
+    <p>For portfolio and professional enquiries:</p>
+   </div>
+
+   <a class="mailbtn" href="mailto:suleozxmen@gmail.com">
+    suleozxmen@gmail.com
+   </a>
+
+  </div>
+
+ </div>
+</section>
+
+<footer>
+ <div class="wrap footerline">
+
+  <strong>Şule Özmen · Data Analytics Engineer</strong>
+
+  <p>
+   This portfolio is designed to show the substance of my work and problem-solving approach while preserving organizational confidentiality. Customer-level information, internal system names, credentials, proprietary table structures and sensitive business logic are intentionally excluded.
+  </p>
+
+ </div>
+</footer>
+
+</body>
+</html>
